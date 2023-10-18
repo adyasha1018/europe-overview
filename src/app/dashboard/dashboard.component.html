@@ -1,0 +1,4 @@
+<div *ngFor="let country of europeanCountries" class="country-card">
+  <div class="country-flag" [style.background-image]="'url(' + country.flagUrl + ')'"></div>
+  <button class="country-name" (click)="openModal(country)">{{ country.name }}</button>
+</div>
